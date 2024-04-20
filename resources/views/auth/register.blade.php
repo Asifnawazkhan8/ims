@@ -49,7 +49,8 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="{{ asset('frontend') }}/images/signup-image.jpg" alt="sing up image"></figure>
+                        <!-- <figure><img src="{{ asset('frontend') }}/images/signup-image.jpg" alt="sing up image"></figure> -->
+                        <figure><img src="https://i.pinimg.com/474x/4b/f0/32/4bf03276db67a79c45fa37876f7a81bd.jpg" alt="Sign Up Image"></figure>
                         <a href="{{ route('login') }}" class="signup-image-link"><b>I am already a member</b></a>
                     </div>
                 </div>

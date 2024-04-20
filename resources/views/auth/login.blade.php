@@ -11,6 +11,12 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="{{ asset('frontend') }}/css/style.css">
+    <style>
+         body,.main,.container {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/007/164/537/non_2x/fingerprint-identity-sensor-data-protection-system-podium-hologram-blue-light-and-concept-free-vector.jpg');
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,13 +25,12 @@
         <section class="sign-in">
             <div class="container">
                 <div class="signin-content">
-                    <div class="signin-image">
-                        <figure><img src="{{ asset('frontend') }}/images/signin-image.jpg" alt="sing up image"></figure>
-                        <a href="{{ route('register') }}" class="signup-image-link">Create an account</a>
-                    </div>
+                <div class="signin-image" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <a style="color:white;" href="{{ route('register') }}" class="signup-image-link">Create an account</a>
+                </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Sign In</h2>
+                        <h2 style="color:white; class="form-title">Sign In</h2>
                         <form method="POST" action="{{ route('login') }}" class="register-form" id="login-form">
                         @csrf
                             <div class="form-group">
@@ -38,7 +43,7 @@
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                                <label style="color:white; for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>

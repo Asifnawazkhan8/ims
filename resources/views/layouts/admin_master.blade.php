@@ -14,8 +14,8 @@ Products<!DOCTYPE html>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand">Inventory Management</a>
+        <nav style="background:darkblue;" class="sb-topnav navbar navbar-expand navbar-dark">
+            <a class="navbar-brand" >Inventory Management</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -43,17 +43,17 @@ Products<!DOCTYPE html>
                 </li>
             </ul>
         </nav>
-        <div id="layoutSidenav">
+        <div style="background:lightblue;" id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <nav style="background:darkblue;" class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div style="color:white;" class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="{{ route('dashboard') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <div style="color:white;" class="sb-sidenav-menu-heading">Interface</div>
 
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts" aria-expanded="false" aria-controls="collapseProducts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -131,14 +131,14 @@ Products<!DOCTYPE html>
                 
                 @yield('content')
 
-                <footer class="py-4 bg-light mt-auto">
+                <footer style="background:darkblue; border:1px solid white;" class="py-4 mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Shakil Ahmed, Ekram Asif & Safana Quyum Chowdhury</div>
+                            <div style="color:white;">Copyright &copy; Asif Nawaz Khan 2024</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a style="color:white;" href="#">Privacy Policy</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a style="color:white; href="#">Terms &amp; Conditions</a>
                             </div>
                         </div>
                     </div>

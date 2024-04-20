@@ -99,6 +99,15 @@
 			.rtl table tr td:nth-child(2) {
 				text-align: left;
 			}
+			.invoice-info {
+    white-space: nowrap;
+}
+
+.invoice-info .label {
+    display: inline-block;
+    width: 150px; /* Adjust as needed */
+}
+
 		</style>
 	</head>
 
@@ -110,11 +119,11 @@
 						<table>
 							<tr>
 								<td class="title">
-									<h2>SEP Company Ltd.</h2>
+									<h2>My Inventory.</h2>
 								</td>
 
 								<td>
-									Invoice #: {{$data->id }}<br />
+									<br>Invoice #: {{$data->id }}<br />
 									Created: {{$data->created_at }}<br />
 								</td>
 							</tr>
@@ -126,17 +135,15 @@
 					<td colspan="2">
 						<table>
 							<tr>
-								<td>
-									SEP Company Ltd.<br />
-									GEC<br />
-									Chittagong, Bangladesh
-								</td>
+							<td class="invoice-info">
+							<span class="label">Customer Name:</span> {{ $data->customer_name }} <br>
+							<span class="label">Customer Email:</span> {{ $data->customer_mail }} <br>
+							<span class="label">Company:</span> {{ $data->company }}
+							
+							
+							</td>
 
-								<td>
-									{{ $data->company }}<br />
-									{{ $data->customer_name }}<br />
-									{{ $data->customer_mail }}
-								</td>
+
 							</tr>
 						</table>
 					</td>
@@ -145,7 +152,7 @@
 				<tr class="heading">
 					<td>Details</td>
 
-					<td>#</td>
+					<td>{{$data->product_name}}</td>
 				</tr>
 
 				<tr class="item">

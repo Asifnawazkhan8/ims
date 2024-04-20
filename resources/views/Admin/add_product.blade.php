@@ -14,13 +14,13 @@
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="small mb-1" for="inputFirstName">Product Code</label>
+                                        <label class="small mb-1" for="inputFirstName">Part Number</label>
                                         <input class="form-control py-4" name="code" type="text" placeholder="" />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="small mb-1" for="inputFirstName">Product Name</label>
+                                        <label class="small mb-1" for="inputFirstName">Part Name</label>
                                         <input class="form-control py-4" name="name" type="text" placeholder="" />
                                     </div>
                                 </div>
