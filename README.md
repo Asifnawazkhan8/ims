@@ -24,9 +24,3 @@
 ### Server ON ```url: http://127.0.0.1:8000/```
 
     php artisan serve
-
-## Our valuable team👩‍💻👨‍💻 :
-
-<p align="center">
-  <img src="https://contributors-img.web.app/image?repo=ekramasif/Inventory_Management_System" />
-</p>
